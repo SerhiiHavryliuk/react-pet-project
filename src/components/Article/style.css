@@ -1,0 +1,18 @@
+.article{
+    background: #61dafb;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.article h3{
+ display: flex;
+    justify-content: space-between;
+}
+
+.articleId{
+    text-align: right;
+}
+button:hover{
+    cursor: pointer;
+}

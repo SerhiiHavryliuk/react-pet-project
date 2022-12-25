@@ -1,0 +1,13 @@
+.modal{
+    background: yellow;
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+}
+
+.openModal{
+    display: block;
+}
+.closeModal{
+    display: none;
+}
