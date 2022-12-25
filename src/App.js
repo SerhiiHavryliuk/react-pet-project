@@ -2,6 +2,7 @@ import React, {Component} from "react";
 import ArticleList from "./components/ArticleList";
 import CardList from "./components/CardList/CardList";
 import {robots} from "./data/robots";
+import Timer from "./components/Timer";
 
 
 class App extends Component{
@@ -13,12 +14,15 @@ class App extends Component{
       { id: 4, completed: false, title: "Купити цукерки", description: "4 truyim gfhh dscsdc trhtr asd ejd" },
     ];
     const title = 'My components!'
+      const openModal = false;
     return(
         <div>
             <h2>{title}</h2>
-            <ArticleList showInfo="" articles={SerhiiArticles}/>
+            <ArticleList showModal={openModal} articles={SerhiiArticles}/>
             <h2>Robo Friends</h2>
             <CardList robots={robots}/>
+            <h2>Timer</h2>
+            <Timer></Timer>
         </div>
     );
   }

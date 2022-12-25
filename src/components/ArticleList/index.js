@@ -8,7 +8,7 @@ class ArticleList extends Component {
     //     super(props);
     // }
     state = {
-        showModal: false
+        showModal: this.props.showModal
     }
     render() {
         const myArticles = this.props.articles;
