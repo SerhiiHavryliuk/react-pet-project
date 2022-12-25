@@ -1,5 +1,7 @@
 import React, {Component} from "react";
 import ArticleList from "./components/ArticleList";
+import CardList from "./components/CardList/CardList";
+import {robots} from "./data/robots";
 
 
 class App extends Component{
@@ -13,10 +15,10 @@ class App extends Component{
     const title = 'My components!'
     return(
         <div>
-            <h2>
-                {title}
-            </h2>
-          <ArticleList showInfo="" articles={SerhiiArticles}/>
+            <h2>{title}</h2>
+            <ArticleList showInfo="" articles={SerhiiArticles}/>
+            <h2>Robo Friends</h2>
+            <CardList robots={robots}/>
         </div>
     );
   }
